@@ -193,3 +193,8 @@ body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
     color: var(--secondary);
   }
 }
+
+.category-breadcrumb {
+  visibility: hidden;
+  position: fixed;
+}
