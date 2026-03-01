@@ -43,7 +43,7 @@ html {
       var(--tertiary) 100%
     );
     background-image: url("/uploads/default/original/1X/background.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -150px;
     clip-path: ellipse(148% 70% at 91% -14%);
