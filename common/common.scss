@@ -68,6 +68,25 @@ html body #main-outlet {
     0 4.50776px 10.0172px rgb(0, 0, 0, 0.035),
     0 1.63037px 3.62304px rgb(0, 0, 0, 0.0243888);
 
+  
+  @media screen and (width <= 700px) {
+    padding: 1.5em;
+    margin-top: 0;
+  }
+
+  @media screen and (width <= 1120px) {
+    width: 80%;
+  }
+
+  @media screen and (width <= 1075px) {
+    width: 85%;
+  }
+
+  .archetype-regular & {
+    min-height: 500px;
+  }
+}
+
 body input,
 body button,
 body select,
