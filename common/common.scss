@@ -20,6 +20,54 @@ html {
   font-weight: 400;
 }
 
+html {
+  body:not(.no-ember) {
+    background:
+      linear-gradient(
+        0deg,
+        rgb(var(--primary-rgb), 0.075) 0%,
+        rgb(var(--primary-rgb), 0.075) 100%
+      ),
+      linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
+  }
+
+  .background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+      90deg,
+      var(--tertiary-hover) 0%,
+      var(--tertiary) 100%
+    );
+    background-image: url("/uploads/default/original/1X/background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+    clip-path: ellipse(148% 70% at 91% -14%);
+  }
+
+  body.no-ember .background-container {
+    display: none;
+  }
+}
+
+html body #main-outlet {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background: var(--secondary);
+  border-radius: 1em;
+  padding: 3em 3em 5%;
+  max-width: 1150px;
+  padding-bottom: 5% !important; // overriding inline style
+  box-shadow:
+    0 24px 40px rgb(0, 0, 0, 0.07),
+    0 10.8529px 24.1177px rgb(0, 0, 0, 0.0456112),
+    0 4.50776px 10.0172px rgb(0, 0, 0, 0.035),
+    0 1.63037px 3.62304px rgb(0, 0, 0, 0.0243888);
+
 body input,
 body button,
 body select,
