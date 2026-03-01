@@ -87,6 +87,37 @@ html body #main-outlet {
   }
 }
 
+.d-header-wrap,
+body.no-ember .d-header {
+    @include BorderByOption("more");
+
+    top: 5px;
+    min-width: 95%;
+    margin: 15px;
+
+    text-align: center;
+    display: block;
+    position: relative;
+    background: rgba(17, 18, 23, 0.8);
+    box-shadow: 0px 0px !important;
+    
+
+    .d-header,
+    &.d-header wrap {
+        @include BorderByOption("more");
+
+        top: 4px;
+        //margin: 15px;
+        width: 100%;
+        box-shadow: 0px 0px !important;
+        background-color: #111217;
+
+        .wrap {
+            @include ClearMenu();
+        }
+    }
+}
+
 body input,
 body button,
 body select,
