@@ -15,6 +15,42 @@
   font-style: italic;
 }
 
+@mixin ClearMenu() {
+    backdrop-filter: blur(3rem);
+    -webkit-backdrop-filter: blur(3rem);
+
+    background: $BGPrimary;
+    border-radius: 18px !important;
+    border: none !important;
+}
+
+@mixin ClearMenuForceful() {
+    backdrop-filter: blur(3rem) !important;
+    -webkit-backdrop-filter: blur(3rem) !important;
+
+    background: $BGPrimary !important;
+    border-radius: 18px !important;
+    border: none !important;
+}
+
+@mixin ClearMenuNoRounding() {
+    backdrop-filter: blur(3rem);
+    -webkit-backdrop-filter: blur(3rem);
+
+    background: $BGPrimary;
+    border: none !important;
+}
+
+@mixin BorderByOption($style) {
+    @if $style =="more" {
+        border-radius: 18px;
+    }
+
+    @else {
+        border-radius: 8px;
+    }
+}
+
 html {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -139,42 +175,6 @@ body textarea {
     0 3px 1px -2px rgb(0, 0, 0, 0.2),
     0 2px 2px 0 rgb(0, 0, 0, 0.14),
     0 1px 5px 0 rgb(0, 0, 0, 0.12);
-}
-
-@mixin ClearMenu() {
-    backdrop-filter: blur(3rem);
-    -webkit-backdrop-filter: blur(3rem);
-
-    background: $BGPrimary;
-    border-radius: 18px !important;
-    border: none !important;
-}
-
-@mixin ClearMenuForceful() {
-    backdrop-filter: blur(3rem) !important;
-    -webkit-backdrop-filter: blur(3rem) !important;
-
-    background: $BGPrimary !important;
-    border-radius: 18px !important;
-    border: none !important;
-}
-
-@mixin ClearMenuNoRounding() {
-    backdrop-filter: blur(3rem);
-    -webkit-backdrop-filter: blur(3rem);
-
-    background: $BGPrimary;
-    border: none !important;
-}
-
-@mixin BorderByOption($style) {
-    @if $style =="more" {
-        border-radius: 18px;
-    }
-
-    @else {
-        border-radius: 8px;
-    }
 }
 
 @import "sidebar";
