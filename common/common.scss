@@ -127,7 +127,7 @@ html body #main-outlet {
 body.no-ember .d-header {
     @include BorderByOption("more");
 
-    top: 5px;
+    //top: 5px;
     min-width: 95%;
     margin: 15px;
 
