@@ -72,6 +72,10 @@
   background-color: var(--secondary-very-high);
 }
 
+.latest-topic-list .posts-map, .top-topic-list .posts-map {
+  background-color: inherit;
+}
+
 .column {
   align-self: start;
 }
