@@ -47,10 +47,16 @@
 
 .topic-list,
 .latest-topic-list {
-  border-spacing: 0 3px;
-  border-collapse: initial;
+  border-spacing: 0 4px;
+  border-collapse: separate;
   //background-color: var(--material-lighter-secondary);
 }
+
+.topic-list, .latest-topic-list td:first-child {
+  border-radius 10px;
+}
+
+
 
 .column {
   align-self: start;
