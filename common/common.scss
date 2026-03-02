@@ -129,7 +129,12 @@ body.no-ember .d-header {
     display: block;
     //position: relative;
     background: rgba(17, 18, 23, 0.8);
-    box-shadow: 0px 0px !important;
+    //box-shadow: 0px 0px !important;
+    box-shadow:
+      0 24px 40px #0c0d12,
+      0 10.8529px 24.1177px #0c0d12,
+      0 4.50776px 10.0172px #0c0d12,
+      0 1.63037px 3.62304px #0c0d12;
     
 
     .d-header,
