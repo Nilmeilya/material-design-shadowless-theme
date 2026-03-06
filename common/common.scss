@@ -117,6 +117,18 @@ html body #main-outlet {
   }
 }
 
+.sidebar-wrapper {
+  border-radius: 1em;
+  background: var(--secondary);
+  box-shadow:
+    0 24px 40px rgb(0, 0, 0, 0.07),
+    0 10.8529px 24.1177px rgb(0, 0, 0, 0.0456112),
+    0 4.50776px 10.0172px rgb(0, 0, 0, 0.035),
+    0 1.63037px 3.62304px rgb(0, 0, 0, 0.0243888);
+}
+  
+  
+
 .d-header-wrap,
 body.no-ember .d-header {
     @include BorderByOption("more");
