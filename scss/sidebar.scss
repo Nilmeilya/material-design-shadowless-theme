@@ -22,7 +22,7 @@
 
 // Sidebar Style Overrides
 .sidebar-wrapper {
-  @include boxShadow;
+  //@include boxShadow;
   margin-top: 2.4em;
-  background-color: var(--material-lighter-secondary);
+  //background-color: var(--material-lighter-secondary);
 }
